@@ -1,0 +1,242 @@
+[
+  {
+    "_id": "66a0fe9bd9fd48041dc0de2c",
+    "title": "فواید کشتی",
+    "slug": "wrestling",
+    "category": "66a0e81c28a32088a503d193",
+    "type": "free",
+    "briefText": "فواید کشتی خوبه",
+    "text": "کشتی ورزش کهن میان ایرانیان....",
+    "coverImage": "uploads/coverImage/2024/7/10/1723272284733-718853888.jpg",
+    "likes": ["66a0e4b88dfc01025fc0550d"],
+    "bookmarks": ["66a0e4b88dfc01025fc0550d"],
+    "readingTime": 5,
+    "tags": [],
+    "author": "66a0e4b88dfc01025fc0550d",
+    "related": [],
+    "comments": [],
+    "createdAt": "2024-07-24T13:16:11.557Z",
+    "updatedAt": "2024-08-10T06:44:44.738Z",
+    "__v": 0
+  },
+  {
+    "_id": "66b112263084e9d1b3a476b9",
+    "title": "برنامه نویسی",
+    "slug": "programming",
+    "category": "66b6745d8517385605104e2e",
+    "type": "free",
+    "briefText": "برنامه نویسی خوبه",
+    "text": "برنامه نویس میتونه به صورت دورکاری....",
+    "coverImage": "uploads/coverImage/2024/7/10/1723271412848-756585867.jpg",
+    "likes": ["66a0e4b88dfc01025fc0550d"],
+    "bookmarks": [],
+    "readingTime": 10,
+    "tags": [],
+    "author": "66a0e4b88dfc01025fc0550d",
+    "related": [],
+    "comments": [],
+    "createdAt": "2024-08-05T17:55:50.471Z",
+    "updatedAt": "2024-08-10T06:30:12.854Z",
+    "__v": 0
+  },
+  {
+    "_id": "66b708288517385605104f33",
+    "title": "تاریخ ایران",
+    "slug": "iran-history",
+    "category": "66b674ec8517385605104e3a",
+    "type": "free",
+    "briefText": "تاریخ ایران خوبه",
+    "text": "تاریخ ایران خیلی مبهمه...",
+    "coverImage": "uploads/coverImage/2024/7/10/1723271208287-15446731.jpg",
+    "likes": ["66a0e4b88dfc01025fc0550d"],
+    "bookmarks": ["66a0e4b88dfc01025fc0550d"],
+    "readingTime": 5,
+    "tags": [],
+    "author": "66b675228517385605104e3d",
+    "related": [],
+    "comments": [],
+    "createdAt": "2024-08-10T06:26:48.300Z",
+    "updatedAt": "2024-08-10T07:35:15.745Z",
+    "__v": 0
+  },
+  {
+    "_id": "66b70d2d8517385605104f72",
+    "title": "روستاهای پلکانی",
+    "slug": "stair-village",
+    "category": "66b70d278517385605104f6e",
+    "type": "free",
+    "briefText": "روستای پلکانی جالبه",
+    "text": "روستای پلکانی به این شکله که...",
+    "coverImage": "uploads/coverImage/2024/7/10/1723272493017-914746592.jpg",
+    "likes": ["66a0e4b88dfc01025fc0550d"],
+    "bookmarks": ["66a0e4b88dfc01025fc0550d"],
+    "readingTime": 4,
+    "tags": [],
+    "author": "66b675228517385605104e3d",
+    "related": ["66b70de68517385605104fc1"],
+    "comments": [],
+    "createdAt": "2024-08-10T06:48:13.028Z",
+    "updatedAt": "2024-08-10T07:57:13.686Z",
+    "__v": 0
+  },
+  {
+    "_id": "66b70de68517385605104fc1",
+    "title": "بهترین هتل های ایران",
+    "slug": "best-hotels",
+    "category": "66a20094dc658a7236b514e1",
+    "type": "free",
+    "briefText": "بهترین هتل های ایران اینان",
+    "text": "بهترین هتل های ایران شامل...",
+    "coverImage": "uploads/coverImage/2024/7/10/1723272678097-37094993.jpg",
+    "likes": ["66a0e4b88dfc01025fc0550d"],
+    "bookmarks": [],
+    "readingTime": 5,
+    "tags": [],
+    "author": "66a0e4b88dfc01025fc0550d",
+    "related": ["66b71af27d64321823829483"],
+    "comments": [],
+    "createdAt": "2024-08-10T06:51:18.105Z",
+    "updatedAt": "2024-08-10T07:35:14.521Z",
+    "__v": 0
+  },
+  {
+    "_id": "66b70e6b8517385605104fdd",
+    "title": "زندگی مدرن",
+    "slug": "modern-live",
+    "category": "66a20104dc658a7236b514e5",
+    "type": "free",
+    "briefText": "زندگی مدرن بده",
+    "text": "زندگی مدرن اینجوریه که...",
+    "coverImage": "uploads/coverImage/2024/7/10/1723272811013-637558133.jpg",
+    "likes": [],
+    "bookmarks": ["66a0e4b88dfc01025fc0550d"],
+    "readingTime": 6,
+    "tags": [],
+    "author": "66a0e4b88dfc01025fc0550d",
+    "related": [
+      "66b70ee08517385605104ffa",
+      "66b70d2d8517385605104f72",
+      "66b708288517385605104f33"
+    ],
+    "comments": [],
+    "createdAt": "2024-08-10T06:53:31.019Z",
+    "updatedAt": "2024-08-10T07:35:19.631Z",
+    "__v": 0
+  },
+  {
+    "_id": "66b70ee08517385605104ffa",
+    "title": "کار فریلنسری",
+    "slug": "freelancering",
+    "category": "66b6745d8517385605104e2e",
+    "type": "free",
+    "briefText": "فریلنسری خوبه",
+    "text": "فریلنسری همه ش کاره",
+    "coverImage": "uploads/coverImage/2024/7/10/1723272928915-216779901.jpeg",
+    "likes": ["66a0e4b88dfc01025fc0550d"],
+    "bookmarks": ["66a0e4b88dfc01025fc0550d"],
+    "readingTime": 3,
+    "tags": [],
+    "author": "66a0e4b88dfc01025fc0550d",
+    "related": [],
+    "comments": [
+      {
+        "_id": "66b14ddf7c007974fef9d25a",
+        "user": "66a0e4b88dfc01025fc0550d",
+        "post": "66a0fe9bd9fd48041dc0de2c",
+        "content": {
+          "text": "first comment\r\n"
+        },
+        "status": 2,
+        "openToComment": true,
+        "answers": [],
+        "createdAt": "2024-08-05T22:10:39.538Z",
+        "updatedAt": "2024-08-05T22:56:31.198Z",
+        "__v": 0
+      },
+      {
+        "_id": "66b14dec7c007974fef9d263",
+        "user": "66a0e4b88dfc01025fc0550d",
+        "post": "66a0fe9bd9fd48041dc0de2c",
+        "content": {
+          "text": "second comment base"
+        },
+        "status": 2,
+        "openToComment": true,
+        "answers": [
+          {
+            "user": "66a0e4b88dfc01025fc0550d",
+            "post": "66a0fe9bd9fd48041dc0de2c",
+            "content": {
+              "text": "third comment reply"
+            },
+            "status": 2,
+            "openToComment": false,
+            "_id": "66b14e177c007974fef9d26d",
+            "createdAt": "2024-08-05T22:11:35.921Z",
+            "updatedAt": "2024-08-05T22:11:35.921Z"
+          }
+        ],
+        "createdAt": "2024-08-05T22:10:52.757Z",
+        "updatedAt": "2024-08-06T00:57:18.597Z",
+        "__v": 0
+      },
+      {
+        "_id": "66b719c18517385605105368",
+        "user": "66a0e4b88dfc01025fc0550d",
+        "post": "66b70ee08517385605104ffa",
+        "content": {
+          "text": "کار فریلنسری دستمزدش چطوره؟\r\n"
+        },
+        "status": 2,
+        "openToComment": true,
+        "answers": [
+          {
+            "user": "66a0e4b88dfc01025fc0550d",
+            "post": "66b70ee08517385605104ffa",
+            "content": {
+              "text": "میانگین ساعتی ۱۵۰-۲۰۰ هزارتومان"
+            },
+            "status": 2,
+            "openToComment": false,
+            "_id": "66b719d78517385605105372",
+            "createdAt": "2024-08-10T07:42:15.465Z",
+            "updatedAt": "2024-08-10T07:42:15.465Z"
+          }
+        ],
+        "createdAt": "2024-08-10T07:41:53.353Z",
+        "updatedAt": "2024-08-10T07:42:15.465Z",
+        "__v": 0
+      },
+      {
+        "_id": "66b71c2c85173856051053fc",
+        "user": "66a0e4b88dfc01025fc0550d",
+        "post": "66b708288517385605104f33",
+        "content": {
+          "text": "تاریخ خوبه یا جغرافیا ؟"
+        },
+        "status": 2,
+        "openToComment": true,
+        "answers": [
+          {
+            "user": "66a0e4b88dfc01025fc0550d",
+            "post": "66b708288517385605104f33",
+            "content": {
+              "text": "قطعا ریاضیات!"
+            },
+            "status": 2,
+            "openToComment": false,
+            "_id": "66b71c398517385605105406",
+            "createdAt": "2024-08-10T07:52:25.734Z",
+            "updatedAt": "2024-08-10T07:52:25.734Z"
+          }
+        ],
+        "createdAt": "2024-08-10T07:52:12.115Z",
+        "updatedAt": "2024-08-10T07:52:25.734Z",
+        "__v": 0
+      }
+    ],
+    "createdAt": "2024-08-10T06:55:28.919Z",
+    "updatedAt": "2024-08-10T07:35:21.694Z",
+    "__v": 0
+  }
+]
