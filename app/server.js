@@ -33,6 +33,8 @@ class Application {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         authSource: "admin",
+        connectTimeoutMS: 30000,
+        socketTimeoutMS: 45000,
       },
       (err) => {
         if (!err) {
@@ -44,36 +46,43 @@ class Application {
     );
   }
   configServer() {
-    const allowedOrigins = process.env.ALLOW_CORS_ORIGIN?.split(',').map(origin => origin.trim()) || [];
+    const allowedOrigins =
+      process.env.ALLOW_CORS_ORIGIN?.split(",").map((origin) =>
+        origin.trim()
+      ) || [];
 
     this.#app.use(
       cors({
         origin: (origin, callback) => {
           // اجازه دادن به درخواست‌های بدون Origin (مثل curl)
           if (!origin) return callback(null, true);
-          
-          if (allowedOrigins.some(allowed => {
-            return origin === allowed || 
-                   origin.includes(allowed.replace(/https?:\/\//, ''));
-          })) {
+
+          if (
+            allowedOrigins.some((allowed) => {
+              return (
+                origin === allowed ||
+                origin.includes(allowed.replace(/https?:\/\//, ""))
+              );
+            })
+          ) {
             callback(null, true);
           } else {
-            console.error('CORS Blocked:', origin);
-            callback(new Error('Not allowed by CORS'));
+            console.error("CORS Blocked:", origin);
+            callback(new Error("Not allowed by CORS"));
           }
         },
         credentials: true,
-        methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-        allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
+        methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+        allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"],
       })
     );
-  
+
     // برای درخواست‌های OPTIONS
-    this.#app.options('*', cors());
+    this.#app.options("*", cors());
 
     this.#app.use((req, res, next) => {
-      res.header('Access-Control-Allow-Credentials', 'true');
-      res.header('Access-Control-Expose-Headers', 'Authorization');
+      res.header("Access-Control-Allow-Credentials", "true");
+      res.header("Access-Control-Expose-Headers", "Authorization");
       next();
     });
 
