@@ -44,22 +44,38 @@ class Application {
     );
   }
   configServer() {
-    const allowedOrigins = process.env.ALLOW_CORS_ORIGIN.split(",").map(
-      (origin) => origin.trim()
-    );
+    const allowedOrigins = process.env.ALLOW_CORS_ORIGIN?.split(',').map(origin => origin.trim()) || [];
 
     this.#app.use(
       cors({
         origin: (origin, callback) => {
-          if (!origin || allowedOrigins.includes(origin)) {
+          // اجازه دادن به درخواست‌های بدون Origin (مثل curl)
+          if (!origin) return callback(null, true);
+          
+          if (allowedOrigins.some(allowed => {
+            return origin === allowed || 
+                   origin.includes(allowed.replace(/https?:\/\//, ''));
+          })) {
             callback(null, true);
           } else {
-            callback(new Error("Not allowed by CORS"));
+            console.error('CORS Blocked:', origin);
+            callback(new Error('Not allowed by CORS'));
           }
         },
         credentials: true,
+        methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+        allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
       })
     );
+  
+    // برای درخواست‌های OPTIONS
+    this.#app.options('*', cors());
+
+    this.#app.use((req, res, next) => {
+      res.header('Access-Control-Allow-Credentials', 'true');
+      res.header('Access-Control-Expose-Headers', 'Authorization');
+      next();
+    });
 
     this.#app.use(express.json());
     this.#app.use(express.urlencoded({ extended: true }));
