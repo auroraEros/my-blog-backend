@@ -44,28 +44,13 @@ class Application {
     );
   }
   configServer() {
-    const allowedOrigins = process.env.ALLOW_CORS_ORIGIN.split(",").map(
-      (origin) => origin.trim()
-    );
-
     this.#app.use(
-      cors({
-        origin: (origin, callback) => {
-          if (!origin || allowedOrigins.includes(origin)) {
-            callback(null, true);
-          } else {
-            callback(new Error("Not allowed by CORS"));
-          }
-        },
-        credentials: true,
-      })
+      cors({ credentials: true, origin: process.env.ALLOW_CORS_ORIGIN })
     );
-
     this.#app.use(express.json());
     this.#app.use(express.urlencoded({ extended: true }));
     this.#app.use(express.static(path.join(__dirname, "..")));
   }
-
   initClientSession() {
     this.#app.use(cookieParser(process.env.COOKIE_PARSER_SECRET_KEY));
   }
