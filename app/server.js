@@ -47,7 +47,7 @@ class Application {
     this.#app.use(
       cors({
         credentials: true,
-        origin: "https://my-blog-xi-six-21.vercel.app/",
+        origin: process.env.ALLOW_CORS_ORIGIN,
       })
     );
 
