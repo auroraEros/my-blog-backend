@@ -59,7 +59,7 @@ async function setAccessToken(res, user) {
     httpOnly: true, // The cookie only accessible by the web server
     signed: true, // Indicates if the cookie should be signed
     sameSite: "None",
-    secure: true,
+    secure:true,
     domain: "my-blog-xi-six-21.vercel.app",
   };
   res.cookie(
