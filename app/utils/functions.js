@@ -60,7 +60,7 @@ async function setAccessToken(res, user) {
     signed: true, // Indicates if the cookie should be signed
     sameSite: "None",
     secure:true,
-    domain: "my-blog-xi-six-21.vercel.app",
+    domain: "my-blog-eight-xi-38.vercel.app/",
   };
   res.cookie(
     "accessToken",
@@ -76,7 +76,7 @@ async function setRefreshToken(res, user) {
     signed: true, // Indicates if the cookie should be signed
     sameSite: "None",
     secure: true,
-    domain: "my-blog-xi-six-21.vercel.app",
+    domain: "my-blog-eight-xi-38.vercel.app/",
   };
   res.cookie(
     "refreshToken",
