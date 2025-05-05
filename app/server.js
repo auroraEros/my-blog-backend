@@ -47,7 +47,7 @@ class Application {
     this.#app.use(
       cors({
         credentials: true,
-        origin: "https://my-blog-eight-xi-38.vercel.app/",
+        origin: "https://my-blog-eight-xi-38.vercel.app",
       })
     );
     this.#app.use(express.json());
