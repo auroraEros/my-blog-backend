@@ -1,5 +1,6 @@
 node_modules/
 .env
+.env.production.local
 .git
 public/*
 # UPLOADS FILE IS NOT BE IGNORED INTENTIONALLY !
