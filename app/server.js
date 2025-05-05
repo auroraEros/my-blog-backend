@@ -45,7 +45,10 @@ class Application {
   }
   configServer() {
     this.#app.use(
-      cors({ credentials: true, origin: process.env.ALLOW_CORS_ORIGIN })
+      cors({
+        credentials: true,
+        origin: "https://my-blog-eight-xi-38.vercel.app/",
+      })
     );
     this.#app.use(express.json());
     this.#app.use(express.urlencoded({ extended: true }));
